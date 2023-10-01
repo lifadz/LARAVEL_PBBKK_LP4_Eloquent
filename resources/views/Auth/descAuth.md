@@ -1,0 +1,2 @@
+Pada folder Auth yang berada di dalam folder views pada direktori resources, terdapat 2 file blade,yaitu Login dan Register yang berfungsi <br>
+untuk menampilkan file blade tersebut pada halaman browser

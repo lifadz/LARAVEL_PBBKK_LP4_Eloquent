@@ -1,0 +1,1 @@
+Terdapat file Welcome.blade yang berfungsi sebagai halaman utama yang akan ditampilkan saat memasukkan url berdasarkan routes yang telah dibuat.

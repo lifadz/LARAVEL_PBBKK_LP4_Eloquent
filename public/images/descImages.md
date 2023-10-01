@@ -1,0 +1,1 @@
+Pada folder images, terdapat file asset,yaitu image(gambar) untuk digunakan pada halaman website yang akan dibuat

@@ -1,0 +1,1 @@
+Pada file cssfile ini berisikan file - file css yang akan digunakan pada setiap blade pada folder view yang berada di dalam direktori resources
