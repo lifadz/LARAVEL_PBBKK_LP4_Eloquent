@@ -13,30 +13,17 @@
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Selamat Datang Toko Cendera Mata</h1>
- 
-	<div class="kotak_login">
-		<p class="tulisan_login">Silahkan login</p>
-        
-		<form>
-            
-            @csrf
 
-			<label>Username</label>
-			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+	<header>
+		<h2 class="logo">Sari <span>Rasa</span></h2>
+		<nav class="navigation">
+			<a href="#">Beranda</a>
+			<a href="#">Produk</a>
+			<a href="#">Tentang Kami</a>
+			<a href="#">Kontak</a>
+		</nav>
+	</header>
  
-			<label>Password</label>
-			<input type="text" name="password" class="form_login" placeholder="Password ..">
- 
-			<input type="submit" class="tombol_login" value="LOGIN">
- 
-			<br/>
-			<br/>
-			<center>
-				<a class="link" href="/Welcome">Kembali</a>
-			</center>
-		</form>
-		
-	</div>
+	
 </body>
 </html>

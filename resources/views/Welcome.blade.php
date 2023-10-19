@@ -14,30 +14,29 @@
 </head>
 <body>
 <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <h3>SariRasa</h3>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Beranda</a></li>
-                    <li><a href="">Produk</a></li>
-                    <li><a href="">Tentang</a></li>
-                    <li><a href="">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <nav class="nav">
+        <a href="#" class="nav-logo">X-SHOP</a>
+
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Beranda</a>
+                <a href="#" class="nav-link">Produk</a>
+                <a href="#" class="nav-link">Tentang</a>
+                <a href="#" class="nav-link">Kontak</a>
+            </li>
+        </ul>
+
+        <button class="button-login">Login</button>
+    </nav>
     <div class="row">
         <div class="col-2-word">
-            <h1>Pusatnya Oleh - Oleh <br> Khas Bengkulu</h1>
-            <p>Nikmati Keindahan Budaya Bengkulu dalam Setiap Produk Kami.</p>
+            <h1>Menyediakan Semua <br>Kebutuhanmu</h1>
+            <p>Apapun Kebutuhanmu,Semuanya Ada Disini.</p>
             <a href="" class="btn">Jelajahi Produk Kami &#8594; </a>
         </div>
         <div class="col-2">
             {{-- Mengimport image yang berada di dalam direktori public dan berada di dalam folder image --}}
-            <img src="{{ asset('images/people.png')}}" alt="pelanggan">
+            <img src="{{ asset('images/girl-pointing.png')}}" alt="pelanggan">
         </div>
     </div>
 </div>

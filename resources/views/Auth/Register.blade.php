@@ -19,7 +19,7 @@
 		<p class="tulisan_register">Masukkan Data Anda</p>
 		
 		<form>
-            
+    
             @csrf
 
             <label>Email</label>

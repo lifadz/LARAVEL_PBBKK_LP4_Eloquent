@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,15 @@ Route::get('/Login',function(){
 Route::get('/Register',function(){
     return view('Auth.Register');
 });
+
+Route::get('/customer',[CustomerController::class, 'index'])->name('customer');// membuat route customer untuk function customer pada controller customer yang berfungsi untuk menampilkan file DataCustomer
+
+Route::get('/tambahdata',[CustomerController::class, 'tambahdata'])->name('tambahdata');// membuat route tambahdata untuk function tambahdata yang menampilkan file TambahData pada controller customer
+
+Route::post('/insertdata',[CustomerController::class, 'insertdata'])->name('insertdata');// membuat route insertdata untuk function insertdata pada controller customer
+
+Route::get('/tampilkandata/{id}',[CustomerController::class, 'tampilkandata'])->name('tampilkandata'); // membuat route tampilkandata untuk function tampilkandata pada controller customer
+
+Route::post('/updatedata/{id}',[CustomerController::class, 'updatedata'])->name('updatedata'); // membuat route updatedata untuk function updatedata pada controller customer
+
+Route::get('/delete/{id}',[CustomerController::class, 'delete'])->name('delete'); // membuat route delete untuk function delete pada controller customer
