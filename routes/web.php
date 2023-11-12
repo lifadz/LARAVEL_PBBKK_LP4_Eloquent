@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,3 +45,15 @@ Route::get('/tampilkandata/{id}',[CustomerController::class, 'tampilkandata'])->
 Route::post('/updatedata/{id}',[CustomerController::class, 'updatedata'])->name('updatedata'); // membuat route updatedata untuk function updatedata pada controller customer
 
 Route::get('/delete/{id}',[CustomerController::class, 'delete'])->name('delete'); // membuat route delete untuk function delete pada controller customer
+
+Route::resource('customers', CustomerController::class);
+
+Route::resource('orders', OrderController::class);
+
+Route::get('customers', [CustomerController::class, 'index'])->name('customers.index');
+Route::get('customers/{customer}', [CustomerController::class, 'show'])->name('customers.show');
+// ... tambahkan rute lainnya sesuai kebutuhan
+
+Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+// ... tambahkan rute lainnya sesuai kebutuhan

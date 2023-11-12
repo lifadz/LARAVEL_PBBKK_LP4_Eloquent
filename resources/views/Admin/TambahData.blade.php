@@ -63,6 +63,12 @@
                         <input type="password" class="form-control" name="password"  >
                         
                       </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                        <input type="file" class="form-control" name="foto"  >
+                        
+                      </div>
                       
                       {{-- Button untuk submit tambah data --}}
                       <button type="submit" class="btn btn-primary">Submit</button>

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('no_hp');
             $table->string('email');
+            $table->string('foto')->nullable()->default(null);
             $table->string('username');
             $table->string('password');
             $table->timestamps();
